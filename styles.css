@@ -10,159 +10,13 @@ html {
     justify-content: space-between;
     background-color: #05336B;
 }
-
-.Body {
+.TopLeft {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    background: linear-gradient(#Acc6e7 60%, #05336B);
-    padding-bottom: 50px;
-    width: 100%;
-}
-
-.BotPanel {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    background: white;
-    
-}
-
-.LocPanel {
-    width: auto;
-    height: 40px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    background-color: #3C5C88;
-}
-
-.TimePanel {
-    max-width: 100%;
-    height: 40px;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    background-color: #061F40;
-}
-
-.TimeText {
-    display: flex;
-    color: white;
-    max-width: 85%;
-    width: 100%;
     justify-content: space-between;
-}
-
-.BodyContent {
-    width: 800px;
-}
-
-.Ads {
-    width: 325px;
-}
-
-.TileC {
-    border: white solid 10px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 750px;
-}
-
-.TileA {
-    border: white solid 10px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 300px;
-}
-
-img {
-    object-fit: contain;
-    max-width: 100%;
-}
-
-.BotInfoBar {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-ul li::before {
-    content: "\200B";
-}
-
-ul > li {
-    display: inline;
-}
-
-.FBItems {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.Arrow {
-    margin: 0px;
-    padding: 0px;
-}
-
-.Terms {
-    font-weight: bold;
-}
-
-.Privacy {
-    font-weight: bold;
-}
-
-.Social {
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
-}
-
-.TileHeader {
-    font-weight: bold;
-    padding-bottom: 5px;
-}
-
-.TileEnd {
-    width: fit-content;
-    border: #1B4DE5 solid 1px;
-    background-color: #1B4DE5;
+    width: 215px;
     color: white;
-    padding: 8px;
-    border-radius: 1.5em;
-    font-size: smaller;
-    font-weight: bold;
-    margin-top: 10px;
 }
-
-.WeatherLogos {
-    margin-right: 70px;
-    display: flex;
-    align-items: center;
-}
-
 .TopCenter {
     border: solid #3C5C89 1px;
     padding: 10px;
@@ -173,7 +27,11 @@ ul > li {
     display: flex;
     justify-content: center;
 }
-
+.MagBox {
+    position: relative;
+    left: 105px;
+    top: 3px;
+}
 .gg-search {
     color: white;
     box-sizing: border-box;
@@ -201,32 +59,168 @@ ul > li {
     top: 10px;
     left: 12px
 }
-
-.MagBox {
-    position: relative;
-    left: 105px;
-    top: 3px;
-}
-
-.TopLeft {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 215px;
-    color: white;
-}
-
 .TopRight {
     color: white;
     width: fit-content;
     margin-right: 20px;
 }
-
 .TItems {
     margin-left: 3px;
     margin-right: 3px;
 }
-
+.Chev {
+    position: relative;
+    bottom: 10px;
+}
+.Prem {
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 1.5em;
+    padding: 7px;
+    font-size: x-small;
+    font-weight: bold;
+    color: black;
+}
+.gg-menu {
+    transform: scale(var(--ggs,1))
+}
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+.gg-menu::after {
+    top: 6px
+} 
+.LocPanel {
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    background-color: #3C5C88;
+    padding-left: 75px;
+}
+.Location {
+    width: 180px;
+    height: 100%;
+    border-right: solid 1px #647D9F;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+}
+.CloudBox {
+    position: relative;
+    right: 12px;
+    top: 6px;
+}
+.gg-cloud {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 8px;
+    height: 2px;
+    background: currentColor;
+    margin-bottom: -20px
+}
+.gg-cloud::after,
+.gg-cloud::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid;
+    box-sizing: border-box;
+    bottom: 0
+}
+.gg-cloud::before {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-right: 0;
+    left: -6px;
+    width: 7px;
+    height: 12px
+}
+.gg-cloud::after {
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    border-left-color: transparent;
+    right: -8px;
+    transform: rotate(-45deg)
+} 
+.TimePanel {
+    max-width: 100%;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #061F40;
+}
+.TimeText {
+    display: flex;
+    color: white;
+    max-width: 85%;
+    width: 100%;
+    justify-content: space-between;
+}
+.ForecastsV {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 69px;
+}
+.gg-arrow-right-o {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 20px
+}
+.gg-arrow-right-o::after,
+.gg-arrow-right-o::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4px
+}
+.gg-arrow-right-o::after {
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    bottom: 6px
+}
+.gg-arrow-right-o::before {
+    width: 10px;
+    height: 2px;
+    bottom: 8px;
+    background: currentColor
+} 
+.Forecasts {
+    display: flex;
+    align-items: center;
+}
 .gg-chevron-double-down {
     box-sizing: border-box;
     position: relative;
@@ -235,7 +229,6 @@ ul > li {
     width: 22px;
     height: 22px
 }
-
 .gg-chevron-double-down::after,
 .gg-chevron-double-down::before {
     content: "";
@@ -250,160 +243,112 @@ ul > li {
     left: 7px;
     top: 3px
 }
-
 .gg-chevron-double-down::after {
     top: 8px
-} 
-
-.Chev {
-    position: relative;
-    bottom: 10px;
 }
-
-.Prem {
-    background-color: white;
-    border: solid white 1px;
-    border-radius: 1.5em;
-    padding: 7px;
-    font-size: x-small;
-    font-weight: bold;
-    color: black;
-}
-
-.gg-menu {
-    transform: scale(var(--ggs,1))
-}
-
-.gg-menu,
-.gg-menu::after,
-.gg-menu::before {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 3px;
-    background: currentColor
-}
-
-.gg-menu::after,
-.gg-menu::before {
-    content: "";
-    position: absolute;
-    top: -6px
-}
-
-.gg-menu::after {
-    top: 6px
-} 
-
-
-.Location {
-    width: 180px;
-    height: 100%;
-    border-right: solid 1px #647D9F;
+.Body {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(#Acc6e7 60%, #05336B);
+    padding-bottom: 50px;
+    width: 100%;
+}
+.BodyContent {
+    width: 800px;
+}
+.TileC {
+    border: white solid 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 750px;
+}
+.TileHeader {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.TileEnd {
+    width: fit-content;
+    border: #1B4DE5 solid 1px;
+    background-color: #1B4DE5;
     color: white;
+    padding: 8px;
+    border-radius: 1.5em;
     font-size: smaller;
     font-weight: bold;
+    margin-top: 10px;
 }
-
-.LocPanel {
+.Ads {
+    width: 325px;
+}
+.TileA {
+    border: white solid 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 75px;
+    flex-direction: column;
+    height: auto;
+    width: 300px;
 }
-
-.gg-cloud {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 8px;
-    height: 2px;
-    background: currentColor;
-    margin-bottom: -20px
-   }
-   
-   .gg-cloud::after,
-   .gg-cloud::before {
-    content: "";
-    display: block;
-    position: absolute;
-    border: 2px solid;
-    box-sizing: border-box;
-    bottom: 0
-   }
-   
-   .gg-cloud::before {
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-right: 0;
-    left: -6px;
-    width: 7px;
-    height: 12px
-   }
-   
-   .gg-cloud::after {
-    width: 16px;
-    height: 16px;
-    border-radius: 100px;
-    border-left-color: transparent;
-    right: -8px;
-    transform: rotate(-45deg)
-   } 
-
-   .CloudBox {
-       position: relative;
-       right: 12px;
-       top: 6px;
-   }
-
-   .Forecasts {
-       display: flex;
-       align-items: center;
-   }
-   .gg-arrow-right-o {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    width: 22px;
-    height: 22px;
-    border: 2px solid;
-    transform: scale(var(--ggs,1));
-    border-radius: 20px
-   }
-   
-   .gg-arrow-right-o::after,
-   .gg-arrow-right-o::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    right: 4px
-   }
-   
-   .gg-arrow-right-o::after {
-    width: 6px;
-    height: 6px;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    transform: rotate(45deg);
-    bottom: 6px
-   }
-   
-   .gg-arrow-right-o::before {
-    width: 10px;
-    height: 2px;
-    bottom: 8px;
-    background: currentColor
-   } 
-
-   .ForecastsV {
+.BotPanel {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+.BotInfoBar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Social {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 69px;
-   }
+    margin-left: 70px;
+}
+.WeatherLogos {
+    margin-right: 70px;
+    display: flex;
+    align-items: center;
+}
+.FBItems {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Terms {
+    font-weight: bold;
+}
+.Arrow {
+    margin: 0px;
+    padding: 0px;
+}
+.Privacy {
+    font-weight: bold;
+}
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li::before {
+    content: "\200B";
+}
+ul > li {
+    display: inline;
+}
