@@ -26,10 +26,28 @@ html {
     width: 400px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 25px;
 }
+.Spinner:hover {
+    transform: rotateX(360deg);
+}
+.Spinner {
+    height: 30px;
+    width: 200px;
+    transition: transform 0.4s;
+    transition-delay: 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-timing-function: ease-in-out;
+}
+
+
+
 .MagBox {
     position: relative;
-    left: 105px;
+    left: 90px;
     top: 3px;
 }
 .gg-search {
@@ -80,6 +98,11 @@ html {
     font-size: x-small;
     font-weight: bold;
     color: black;
+    transition: 0.3s;
+}
+.Prem:hover {
+    color: white;
+    background-color: black;
 }
 .gg-menu {
     transform: scale(var(--ggs,1))
@@ -104,6 +127,9 @@ html {
 .gg-menu::after {
     top: 6px
 } 
+.gg-menu:hover {
+    color: blue;
+}
 .LocPanel {
     width: auto;
     height: 40px;
@@ -178,6 +204,9 @@ html {
     max-width: 85%;
     width: 100%;
     justify-content: space-between;
+}
+.TimeText:hover {
+    text-shadow: 0px 0px 10px white;
 }
 .ForecastsV {
     display: flex;
@@ -296,6 +325,14 @@ html {
     flex-direction: column;
     height: auto;
     width: 300px;
+    transition: 0.5s;
+}
+.TileA:hover {
+    background-color: #05336B;
+    border: #05336B solid 10px;
+}
+.TileA:hover .TileHeader {
+    color: white;
 }
 .BotPanel {
     width: auto;
